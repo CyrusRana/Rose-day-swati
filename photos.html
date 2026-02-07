@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swati Gallery 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- FULLSCREEN POPUP -->
+<div class="media-popup" id="mediaPopup">
+  <div class="media-popup-content">
+
+    <span class="close-media" onclick="closeMedia()">✖</span>
+
+    <img id="popupImage" style="display:none;" alt="Popup Image"/>
+
+    <video id="popupVideo" controls style="display:none;">
+      <source id="popupVideoSource" src="" type="video/mp4">
+    </video>
+
+    <p class="popup-caption">💖 Swati is my favorite memory 🌹✨</p>
+
+  </div>
+</div>
+
+<body>
+
+  <!-- Falling Petals -->
+  <div class="petals-container" id="petals-container"></div>
+
+  <!-- Floating Hearts -->
+  <div class="floating-bg" id="floating-bg"></div>
+
+  <header>
+    <h1>Swati's Cute Gallery 📸🎥💗</h1>
+    <p>Every picture & video is a memory I adore 🌸✨</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>🌹 Swati's Special Moments</h2>
+      <p class="small-text">
+        A gallery full of beauty, memories and love 💖✨
+      </p>
+
+      <div class="creative-grid">
+
+        <!-- PHOTO 1 -->
+        <div class="creative-item float1" onclick="openMedia('swati1.jpeg','image')">
+  <img src="swati1.jpeg" alt="Swati Photo 1">
+  <div class="overlay">
+    <h3>🌸 My Favorite Smile</h3>
+    <p>Click to view 💖</p>
+  </div>
+</div>
+
+
+        <!-- PHOTO 2 -->
+        <div class="creative-item float2" onclick="openMedia('swati2.jpeg','image')">
+  <img src="swati2.jpeg" alt="Swati Photo 2">
+  <div class="overlay">
+    <h3>💗 My Cutuuu Patutu</h3>
+    <p>Click to view ✨</p>
+  </div>
+</div>
+
+
+        <!-- VIDEO 1 -->
+        <div class="creative-item float3" onclick="openMedia('video1.mp4','video')">
+  <video muted>
+    <source src="Video1.mp4" type="video/mp4">
+  </video>
+  <div class="overlay">
+    <h3>🎥 Cute Moment</h3>
+    <p>Click to play 💖</p>
+  </div>
+</div>
+
+
+        <!-- VIDEO 2 -->
+       <div class="creative-item float4" onclick="openMedia('video2.mp4','video')">
+  <video muted>
+    <source src="Video2.mp4" type="video/mp4">
+  </video>
+  <div class="overlay">
+    <h3>✨ Precious Memory</h3>
+    <p>Click to play 🌹</p>
+  </div>
+</div>
+
+
+    <!-- Cute Quote Card -->
+    <div class="card center-card">
+      <h2>💌 A Small Line For Swati</h2>
+      <p class="quote-text">
+        "Some people are flowers...  
+        but you Swati... you are the whole garden of my heart 🌷💖"
+      </p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="card center-card">
+      <h2>🌸 Wanna go back?</h2>
+      <button class="btn" onclick="goToRosePage()">Back to Rose Page 🌹</button>
+      <br><br>
+      <button class="btn" onclick="goBack()">Back to Welcome 💗</button>
+    </div>
+
+  </div>
+
+  <!-- FULLSCREEN POPUP VIEW -->
+  <div class="media-popup" id="mediaPopup">
+    <div class="media-popup-content">
+
+      <span class="close-media" onclick="closeMedia()">✖</span>
+
+      <img id="popupImage" style="display:none;" />
+      
+      <video id="popupVideo" controls style="display:none;">
+        <source id="popupVideoSource" src="" type="video/mp4">
+      </video>
+
+      <p class="popup-caption">💖 Swati is my favorite memory 🌹✨</p>
+
+    </div>
+  </div>
+
+  <footer>
+    Swati Saini 💖 | I made this with pure feelings 🌹✨
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+>
