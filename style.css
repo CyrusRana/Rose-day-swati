@@ -755,4 +755,8 @@ footer {
   font-weight: 700;
   color: #99004d;
 }
+.creative-item video {
+  pointer-events: none;
+}
+
 
